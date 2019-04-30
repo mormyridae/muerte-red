@@ -1,0 +1,30 @@
+from,to,type
+Danaë,weaves,adjacent
+weaves,time,adjacent
+time,gilded,adjacent
+gilded,Nile,adjacent
+Nile,wrapping,adjacent
+wrapping,lips,adjacent
+lips,passed, adjacent
+passed,lips, adjacent
+lips,disconnected, adjacent
+disconnected,flights, adjacent
+flights,hand, apposite
+lip, lips,lemma
+hand,lip, adjacent
+lip,bird, adjacent
+bird,snowed, adjacent
+snowed,circle, apposite
+snowed, snow, lemma
+circle,snow, apposite
+snow,opened, adjacent
+opened,hand, apposite
+hand,blood, adjacent
+blood,silk, adjacent
+silk,erased, adjacent
+erased,perfection, adjacent
+perfection,dies, adjacent
+dies,knees, adjacent
+knees,zeal, adjacent
+zeal,hides, adjacent
+hides,frolics, adjacent
