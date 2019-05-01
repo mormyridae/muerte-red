@@ -4,6 +4,7 @@ face,false,1
 false,firmness,1
 firmness,mirror,1
 mirror,mirror,2
+mirror,forgotten,1
 forgotten,sound,1
 sound,night,1
 night,door,1
@@ -14,7 +15,8 @@ half-opens,mask,1
 mask,river,1
 river,spigot-griffin,1
 spigot-griffin,dreams,1
-dreams,dead,2
+dreams,death,2
+death,cold,1
 cold,comet,1
 comet,unearthed,1
 unearthed,air,1

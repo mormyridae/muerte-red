@@ -1,5 +1,4 @@
 from,to,type
-since,yesterday,1
 yesterday,questions,1
 questions,frolic,1
 frolic,close,1
@@ -13,7 +12,8 @@ treasures,rage,1
 rage,scatters,1
 scatters,flatters,1
 flatters,reprimands,1
-reprimands,doncels,2
+reprimands,doncel,2
+doncel,work,1
 work,walnuts,1
 walnuts,spurt,1
 spurt,forehead,1
@@ -25,13 +25,15 @@ roots,mansion,1
 mansion,buried,1
 buried,screams,1
 screams,IF,2
+IF,moves,1
 moves,uncurving,1
 uncurving,bee,1
 bee,mirror,1
-mirror,destroys,1
-destroys,mute,1
+mirror,destroy,1
+destroy,mute,1
 mute,river,1
 river,IF,2
+IF,sinks,1
 sinks,half-siren,1
 half-siren,fire,1
 fire,loose,1

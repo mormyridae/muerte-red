@@ -7,6 +7,7 @@ forehead,opened,1
 opened,moist,1
 moist,lotus,1
 lotus,endless,2
+endless,shriek,1
 shriek,grove,1
 grove,opened,1
 opened,irate,1
@@ -14,6 +15,7 @@ irate,redouble,1
 redouble,arrow,1
 arrow,death,1
 death,Q,2
+Q,cold,1
 cold,gaze,1
 gaze,NEG,1
 NEG,rush,1

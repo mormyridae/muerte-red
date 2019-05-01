@@ -1,0 +1,294 @@
+
+R version 3.5.3 (2019-03-11) -- "Great Truth"
+Copyright (C) 2019 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin15.6.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[R.app GUI 1.70 (7632) x86_64-apple-darwin15.6.0]
+
+[History restored from /Users/SITPadmin/.Rapp.history]
+
+> nodes <- read.csv("~/polnet2018/Data\ files/muerte-nodes.csv", header=T, as.is=T)
+> > links <- read.csv("~/polnet2018/Data\ files/muerte-edges.csv", header=T, as.is=T)
+Error: unexpected '>' in ">"
+> nodes <- read.csv("~/polnet2018/Data\ files/muerte-nodes.csv", header=T, as.is=T) links <- read.csv("~/polnet2018/Data\ files/muerte-edges.csv", header=T, as.is=T)
+Error: unexpected symbol in "nodes <- read.csv("~/polnet2018/Data\ files/muerte-nodes.csv", header=T, as.is=T) links"
+> nodes <- read.csv("~/polnet2018/Data\ files/muerte-nodes.csv", header=T, as.is=T)links <- read.csv("~/polnet2018/Data\ files/muerte-edges.csv", header=T, as.is=T)
+Error: unexpected symbol in "nodes <- read.csv("~/polnet2018/Data\ files/muerte-nodes.csv", header=T, as.is=T)links"
+> nodes <- read.csv("~/polnet2018/Data\ files/muerte-nodes.csv", header=T, as.is=T)
+> links <- read.csv("~/polnet2018/Data\ files/muerte-edges.csv", header=T, as.is=T)
+> library("igraph")
+
+Attaching package: ‘igraph’
+
+The following objects are masked from ‘package:stats’:
+
+    decompose, spectrum
+
+The following object is masked from ‘package:base’:
+
+    union
+
+> net <- graph_from_data_frame(d=links, vertices=nodes, directed=T) 
+Error in graph_from_data_frame(d = links, vertices = nodes, directed = T) : 
+  Duplicate vertex names
+> net
+Error: object 'net' not found
+> net <- graph_from_data_frame(d=links, vertices=nodes, directed=T) 
+Error in graph_from_data_frame(d = links, vertices = nodes, directed = T) : 
+  Duplicate vertex names
+> net
+Error: object 'net' not found
+> net <- graph_from_data_frame(d=links, vertices=nodes, directed=T) 
+Error in graph_from_data_frame(d = links, vertices = nodes, directed = T) : 
+  Duplicate vertex names
+> net
+Error: object 'net' not found
+> nodes <- read.csv("~/polnet2018/Data\ files/muerte-nodes.csv", header=T, as.is=T)links <- read.csv("~/polnet2018/Data\ files/muerte-edges.csv", header=T, as.is=T)
+Error: unexpected symbol in "nodes <- read.csv("~/polnet2018/Data\ files/muerte-nodes.csv", header=T, as.is=T)links"
+> nodes <- read.csv("~/polnet2018/Data\ files/muerte-nodes.csv", header=T, as.is=T)
+> links <- read.csv("~/polnet2018/Data\ files/muerte-edges.csv", header=T, as.is=T)
+> net <- graph_from_data_frame(d=links, vertices=nodes, directed=T) 
+Error in graph_from_data_frame(d = links, vertices = nodes, directed = T) : 
+  Duplicate vertex names
+> net
+Error: object 'net' not found
+> nodes <- read.csv("~/polnet2018/Data\ files/muerte-nodes.csv", header=T, as.is=T)
+> net <- graph_from_data_frame(d=links, vertices=nodes, directed=T) 
+Error in graph_from_data_frame(d = links, vertices = nodes, directed = T) : 
+  Some vertex names in edge list are not listed in vertex data frame
+> net
+Error: object 'net' not found
+> links <- read.csv("~/polnet2018/Data\ files/muerte-edges.csv", header=T, as.is=T)
+> net <- graph_from_data_frame(d=links, vertices=nodes, directed=T) 
+Error in graph_from_data_frame(d = links, vertices = nodes, directed = T) : 
+  Some vertex names in edge list are not listed in vertex data frame
+> net
+Error: object 'net' not found
+> nodes <- read.csv("~/polnet2018/Data\ files/muerte-nodes.csv", header=T, as.is=T)
+> links <- read.csv("~/polnet2018/Data\ files/muerte-edges.csv", header=T, as.is=T)
+> net <- graph_from_data_frame(d=links, vertices=nodes, directed=T) 
+Error in graph_from_data_frame(d = links, vertices = nodes, directed = T) : 
+  Some vertex names in edge list are not listed in vertex data frame
+> net
+Error: object 'net' not found
+> nodes <- read.csv("~/polnet2018/Data\ files/muerte-nodes.csv", header=T, as.is=T)
+> links <- read.csv("~/polnet2018/Data\ files/muerte-edges.csv", header=T, as.is=T)
+> net <- graph_from_data_frame(d=links, vertices=nodes, directed=T) 
+Error in graph_from_data_frame(d = links, vertices = nodes, directed = T) : 
+  Some vertex names in edge list are not listed in vertex data frame
+> net
+Error: object 'net' not found
+> links <- read.csv("~/polnet2018/Data\ files/muerte-edges.csv", header=T, as.is=T)
+> nodes <- read.csv("~/polnet2018/Data\ files/muerte-nodes.csv", header=T, as.is=T)
+> net <- graph_from_data_frame(d=links, vertices=nodes, directed=T) 
+> net
+IGRAPH 036bc5e DN-- 26 5 -- 
++ attr: name (v/c), weight (v/n), type (e/c), X (e/l)
++ edges from 036bc5e (vertex names):
+[1] weaves  ->time     time    ->gilded   gilded  ->Nile     Nile    ->wrapping wrapping->lips    
+> net <- graph_from_data_frame(d=links, vertices=nodes, directed=T) 
+> net
+IGRAPH b8eacb2 DN-- 26 5 -- 
++ attr: name (v/c), weight (v/n), type (e/c), X (e/l)
++ edges from b8eacb2 (vertex names):
+[1] weaves  ->time     time    ->gilded   gilded  ->Nile     Nile    ->wrapping wrapping->lips    
+> plot(net)
+> net <- graph_from_data_frame(d=links, vertices=nodes, directed=F) 
+> net
+IGRAPH ec7d4e2 UN-- 26 5 -- 
++ attr: name (v/c), weight (v/n), type (e/c), X (e/l)
++ edges from ec7d4e2 (vertex names):
+[1] weaves  --time     time    --gilded   gilded  --Nile     Nile    --wrapping wrapping--lips    
+> plot(net)
+> E(net)
++ 5/5 edges from ec7d4e2 (vertex names):
+[1] weaves  --time     time    --gilded   gilded  --Nile     Nile    --wrapping wrapping--lips    
+> V(net)
++ 26/26 vertices, named, from ec7d4e2:
+ [1] Danaë        weaves       time         gilded       Nile         wrapping     lips        
+ [8] passed       disconnected flights      hand         lip          bird         snowed      
+[15] circle       snow         opened       blood        silk         erased       perfection  
+[22] dies         knees        zeal         hides        frolics     
+> links <- read.csv("~/polnet2018/Data\ files/muerte-edges.csv", header=T, as.is=T)
+> E(net)
++ 5/5 edges from ec7d4e2 (vertex names):
+[1] weaves  --time     time    --gilded   gilded  --Nile     Nile    --wrapping wrapping--lips    
+> links <- read.csv("~/polnet2018/Data\ files/muerte-edges.csv", header=T, as.is=T)
+> E(net)
++ 5/5 edges from ec7d4e2 (vertex names):
+[1] weaves  --time     time    --gilded   gilded  --Nile     Nile    --wrapping wrapping--lips    
+> links <- read.csv("~/polnet2018/Data\ files/muerte-edges.csv", header=T, as.is=T)
+> net <- graph_from_data_frame(d=links, vertices=nodes, directed=F) 
+> net
+IGRAPH e561d3e UN-- 26 27 -- 
++ attr: name (v/c), weight (v/n), type (e/c)
++ edges from e561d3e (vertex names):
+ [1] Danaë       --weaves       weaves      --time         time        --gilded      
+ [4] gilded      --Nile         Nile        --wrapping     wrapping    --lips        
+ [7] lips        --passed       lips        --passed       lips        --disconnected
+[10] disconnected--flights      flights     --hand         hand        --lip         
+[13] lip         --bird         bird        --snowed       snowed      --circle      
+[16] circle      --snow         snow        --opened       hand        --opened      
+[19] hand        --blood        blood       --silk         silk        --erased      
+[22] erased      --perfection   perfection  --dies         dies        --knees       
++ ... omitted several edges
+> plot(net)
+> V(net)$size <- V(net)$weighte.size*0.6
+Warning message:
+In length(vattrs[[name]]) <- vc : length of NULL cannot be changed
+> V(net)$size <- V(net)$weight.size*0.6
+Warning message:
+In length(vattrs[[name]]) <- vc : length of NULL cannot be changed
+> deg <- degree(net, mode="alk
++ s
++ 
++ 
+> tkid <- tkplot(net)
+Error in tkplot(net) : tcl/tk library not available
+> import tcl
+Error: unexpected symbol in "import tcl"
+> library("tcl")
+Error in library("tcl") : there is no package called ‘tcl’
+> library("tkplot")
+Error in library("tkplot") : there is no package called ‘tkplot’
+> library("visNetwork")
+> visNEtwork(nodes, links, width="100%", height = "400px")
+Error in visNEtwork(nodes, links, width = "100%", height = "400px") : 
+  could not find function "visNEtwork"
+> visNetwork(nodes, links, width="100%", height = "400px")
+> vis.nodes <- nodes
+> vis.links <- links
+> 
+> vis.nodes$shape  <- "dot"  
+> vis.nodes$shadow <- TRUE # Nodes will drop shadow
+> vis.nodes$title  <- vis.nodes$media # Text on click
+> vis.nodes$label  <- vis.nodes$type.label # Node label
+> vis.nodes$size   <- vis.nodes$audience.size # Node size
+> vis.nodes$borderWidth <- 2 # Node border width
+> 
+> vis.nodes$color.background <- c("slategrey", "tomato", "gold")[nodes$media.type]
+Error in `$<-.data.frame`(`*tmp*`, color.background, value = character(0)) : 
+  replacement has 0 rows, data has 26
+> vis.nodes$color.border <- "black"
+> vis.nodes$color.highlight.background <- "orange"
+> vis.nodes$color.highlight.border <- "darkred"
+> 
+> visNetwork(vis.nodes, vis.links)
+> vis.nodes <- nodes
+> vis.links <- links
+> 
+> vis.nodes$shape  <- "dot"  
+> vis.nodes$shadow <- TRUE # Nodes will drop shadow
+> vis.nodes$label  <- vis.nodes$id # Node label
+> vis.nodes$size   <- vis.nodes$weight # Node size
+> vis.nodes$borderWidth <- 2 # Node border width
+> 
+> vis.nodes$color.background <- c("slategrey", "tomato", "gold")[nodes$media.type]
+Error in `$<-.data.frame`(`*tmp*`, color.background, value = character(0)) : 
+  replacement has 0 rows, data has 26
+> vis.nodes$color.border <- "black"
+> vis.nodes$color.highlight.background <- "orange"
+> vis.nodes$color.highlight.border <- "darkred"
+> 
+> visNetwork(vis.nodes, vis.links)
+> vis.nodes <- nodes
+> vis.links <- links
+> 
+> vis.nodes$shape  <- "dot"  
+> vis.nodes$shadow <- TRUE # Nodes will drop shadow
+> vis.nodes$label  <- vis.nodes$id # Node label
+> vis.nodes$size   <- vis.nodes$weight*2 # Node size
+> vis.nodes$borderWidth <- 2 # Node border width
+> 
+> vis.nodes$color.background <- c("slategrey", "tomato", "gold")[nodes$media.type]
+Error in `$<-.data.frame`(`*tmp*`, color.background, value = character(0)) : 
+  replacement has 0 rows, data has 26
+> vis.nodes$color.border <- "black"
+> vis.nodes$color.highlight.background <- "orange"
+> vis.nodes$color.highlight.border <- "darkred"
+> 
+> visNetwork(vis.nodes, vis.links)
+> vis.nodes <- nodes
+> vis.links <- links
+> 
+> vis.nodes$shape  <- "dot"  
+> vis.nodes$shadow <- TRUE # Nodes will drop shadow
+> vis.nodes$label  <- vis.nodes$id # Node label
+> vis.nodes$size   <- vis.nodes$weight*2 # Node size
+> vis.nodes$borderWidth <- 1 # Node border width
+> vis.nodes$color.border <- "black"
+> vis.nodes$color.highlight.background <- "orange"
+> vis.nodes$color.highlight.border <- "darkred"
+> 
+> visNetwork(vis.nodes, vis.links)
+> ls()
+[1] "links"     "net"       "nodes"     "vis.links" "vis.nodes"
+> vis.nodes <- nodes
+> vis.links <- links
+> 
+> vis.nodes$shape  <- "dot"  
+> vis.nodes$shadow <- TRUE # Nodes will drop shadow
+> vis.nodes$label  <- vis.nodes$id # Node label
+> vis.nodes$size   <- vis.nodes$(10+weight*2) # Node size
+Error: unexpected '(' in "vis.nodes$size   <- vis.nodes$("
+> vis.nodes$borderWidth <- 1 # Node border width
+> vis.nodes$color.border <- "black"
+> vis.nodes$color.highlight.background <- "orange"
+> vis.nodes$color.highlight.border <- "darkred"
+> 
+> visNetwork(vis.nodes, vis.links)
+> vis.nodes <- nodes
+> vis.links <- links
+> 
+> vis.nodes$shape  <- "dot"  
+> vis.nodes$shadow <- TRUE # Nodes will drop shadow
+> vis.nodes$label  <- vis.nodes$id # Node label
+> vis.nodes$size   <- vis.nodes$10+weight*2 # Node size
+Error: unexpected numeric constant in "vis.nodes$size   <- vis.nodes$10"
+> vis.nodes$borderWidth <- 1 # Node border width
+> vis.nodes$color.border <- "black"
+> vis.nodes$color.highlight.background <- "orange"
+> vis.nodes$color.highlight.border <- "darkred"
+> 
+> visNetwork(vis.nodes, vis.links)
+> vis.nodes <- nodes
+> vis.links <- links
+> 
+> vis.nodes$shape  <- "dot"  
+> vis.nodes$shadow <- TRUE # Nodes will drop shadow
+> vis.nodes$label  <- vis.nodes$id # Node label
+> vis.nodes$size   <- 10+vis.nodes$weight*2 # Node size
+> vis.nodes$borderWidth <- 1 # Node border width
+> vis.nodes$color.border <- "black"
+> vis.nodes$color.highlight.background <- "orange"
+> vis.nodes$color.highlight.border <- "darkred"
+> 
+> visNetwork(vis.nodes, vis.links)
+> vis.nodes <- nodes
+> vis.links <- links
+> 
+> vis.nodes$shape  <- "dot"  
+> vis.nodes$shadow <- TRUE # Nodes will drop shadow
+> vis.nodes$label  <- vis.nodes$id # Node label
+> vis.nodes$size   <- 10+vis.nodes$weight*2 # Node size
+> vis.nodes$borderWidth <- 1 # Node border width
+> vis.nodes$color.border <- "black"
+> vis.nodes$color.highlight.background <- "orange"
+> vis.nodes$color.highlight.border <- "darkred"
+> 
+> visNetwork(vis.nodes, vis.links, width="100%", height = "800px")
+> links <- read.csv("~/polnet2018/Data\ files/muerte-edges.csv", header=T, as.is=T)

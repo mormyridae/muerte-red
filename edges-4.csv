@@ -1,7 +1,6 @@
 from,to,type
-torches,as,1
-as,fishes,1
-fishes,thin,1
+torches,fish,1
+fish,thin,1
 thin,boy,1
 boy,works,1
 works,night,1
@@ -13,6 +12,7 @@ ignited,serpents,1
 serpents,icicle,1
 icicle,sighthound,1
 sighthound,purple,2
+purple,feather,1
 feather,NEG,1
 NEG,wet,1
 wet,fish,1
@@ -20,6 +20,7 @@ fish,gazing,1
 gazing,me,1
 me,sepulchre,1
 sepulchre,equestrian,2
+equestrian,pheasants,1
 pheasants,NEG,1
 NEG,warn,1
 warn,hand,1
@@ -27,16 +28,18 @@ hand,echo,1
 echo,unfolded,1
 unfolded,pulse,1
 pulse,fingers,2
+fingers,immobile,1
 immobile,calendar,1
 calendar,tedium,1
 tedium,unibrowed,1
 unibrowed,throne,1
 throne,slowly,2
+slowly,wave,1
 wave,formed,1
 formed,marmoreal,1
 marmoreal,cavity,1
-cavity,gazes,1
-gazes,backs,1
+cavity,gaze,1
+gaze,backs,1
 backs,never,1
 never,ask,1
 ask,me,1

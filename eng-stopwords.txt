@@ -1,3 +1,4 @@
+since
 the
 by
 which
@@ -6,6 +7,8 @@ or
 it
 its
 was
+as
+him
 with
 without
 that
@@ -38,3 +41,4 @@ to
 for
 at
 where
+but
