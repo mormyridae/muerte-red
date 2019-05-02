@@ -1,0 +1,10 @@
+name: muerte-shiny
+title:
+username:
+account: hilozoista
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 904488
+bundleId: 2054523
+url: https://hilozoista.shinyapps.io/muerte-shiny/
+when: 1556781106.66723

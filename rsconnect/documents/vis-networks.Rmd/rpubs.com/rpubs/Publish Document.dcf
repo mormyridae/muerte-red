@@ -1,0 +1,10 @@
+name: Publish Document
+title:
+username:
+account: rpubs
+server: rpubs.com
+hostUrl: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/492464/4b4e6035e812451c9ef8e6bdd8cf18db
+bundleId: https://api.rpubs.com/api/v1/document/492464/4b4e6035e812451c9ef8e6bdd8cf18db
+url: http://rpubs.com/hilozoista/492464
+when: 1556772152.73328
