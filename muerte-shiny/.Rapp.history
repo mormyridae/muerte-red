@@ -1,9 +1,4 @@
 plot(x=eng$V1, y=eng$V2, main = "English", xlab = "F1", ylab = "F2", col = ifelse(eng$V3 =="v", 'red', 'blue'), pch=1, xlim = c(200,500), ylim=c(400, 2000))
-dev.off()
-png("eng.jpg", width = 1500, height = 1000)
-plot(x=eng$V1, y=eng$V2, main = "English", xlab = "F1", ylab = "F2", col = ifelse(eng$V3 =="v", 'red', 'blue'), pch=1, xlim = c(200,500), ylim=c(400, 2000))
-dev.off()
-plot(x=eng$V1, y=eng$V2, main = "English", xlab = "F1", ylab = "F2", col = ifelse(eng$V3 =="v", 'red', 'blue'), pch=1, xlim = c(200,500), ylim=c(400, 2000))
 plot(x=eng$V1, y=eng$V2, main = "English", xlab = "F1", ylab = "F2", col = ifelse(eng$V3 =="v", 'red', 'blue'), pch=1, xlim = c(200,500), ylim=c(0, 2000))
 plot(x=eng$V1, y=eng$V2, main = "English", xlab = "F1", ylab = "F2", col = ifelse(eng$V3 =="v", 'red', 'blue'), pch=1, xlim = c(0,500), ylim=c(0, 2000))
 plot(x=eng$V1, y=eng$V2, main = "English", xlab = "F1", ylab = "F2", col = ifelse(eng$V3 =="v", 'red', 'blue'), pch=1, xlim = c(150,500), ylim=c(0, 2000))
@@ -397,14 +392,20 @@ install.package("knitr")
 s
 install.package("knitr")
 install.packages("knitr")
+get.cwd()
+cwd
+ls
 getwd()
+setwd(/Users/SITPadmin/muerte-red/muerte-shiny)
 setwd("/Users/SITPadmin/muerte-red/muerte-shiny")
-getwd()
-install.packages('rsconnect')
-rsconnect::setAccountInfo(name='hilozoista', token='FCF70B2EE07E9E2BFF97B2D4A46D43CD', secret='jdgSJTF5RY6QL9jPy97DLXffCJMN2txjT97Nky+g')
-library(rsconnect)#
-rsconnect::deployApp('/Users/SITPadmin/muerte-red/muerte-shiny')
-library(rsconnect)#
-rsconnect::deployApp('/Users/SITPadmin/muerte-red/muerte-shiny')
-library(rsconnect)#
-rsconnect::deployApp('/Users/SITPadmin/muerte-red/muerte-shiny')
+runApp()
+library(shiny)
+runUrl("https://hilozoista.shinyapps.io/muerte-shiny/")
+deployApp()
+library(rsconnect)
+deployApp()
+runApp(appDir = getwd(), port = getOption("shiny.port"),#
+  launch.browser = getOption("shiny.launch.browser", interactive()),#
+  host = getOption("shiny.host", "127.0.0.1"), workerId = "",#
+  quiet = FALSE, display.mode = c("auto", "normal", "showcase"),#
+  test.mode = getOption("shiny.testmode", FALSE))

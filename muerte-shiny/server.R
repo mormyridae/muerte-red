@@ -29,6 +29,7 @@ plot.stanza <- function(n, a) {
     vis.nodes$shadow <- FALSE # Nodes will drop shadow
     #vis.nodes$title  <- vis.nodes$media # Text on click
     vis.nodes$label  <- vis.nodes$id # Node label
+    vis.nodes$label.cex  <- 30 # Node label
     vis.nodes$title  <- vis.nodes$weight
     vis.nodes$size   <- 10+vis.nodes$weight*4# Node size
     vis.nodes$borderWidth <- .5 # Node border width

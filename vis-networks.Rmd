@@ -44,16 +44,16 @@ runApp("my_app")
 plot.stanza <- function(n, a) {
     INDEX=toString(n)
     if(INDEX=="-1") {
-        nodes <- read.csv("~/muerte-red/nodes.csv", header=T, as.is=T)
-    links <- read.csv("~/muerte-red/edges.csv", header=T, as.is=T)
+        nodes <- read.csv("~/muerte-red/muerte-shiny/nodes.csv", header=T, as.is=T)
+    links <- read.csv("~/muerte-red/muerte-shiny/edges.csv", header=T, as.is=T)
         
     } else {
         if(a) {
-          nodes <- read.csv("~/muerte-red/nodes.csv", header=T, as.is=T)
-          links <- read.csv(paste(paste("~/muerte-red/edges-",INDEX,sep=""),".csv",sep=""), header=T, as.is=T)    
+          nodes <- read.csv("~/muerte-red/muerte-shiny/nodes.csv", header=T, as.is=T)
+          links <- read.csv(paste(paste("~/muerte-red/muerte-shiny/edges-",INDEX,sep=""),".csv",sep=""), header=T, as.is=T)    
         } else {
-          nodes <- read.csv(paste(paste("~/muerte-red/nodes-",INDEX,sep=""),".csv",sep=""), header=T, as.is=T)
-          links <- read.csv(paste(paste("~/muerte-red/edges-",INDEX,sep=""),".csv",sep=""), header=T, as.is=T)        
+          nodes <- read.csv(paste(paste("~/muerte-red/muerte-shiny/nodes-",INDEX,sep=""),".csv",sep=""), header=T, as.is=T)
+          links <- read.csv(paste(paste("~/muerte-red/muerte-shiny/edges-",INDEX,sep=""),".csv",sep=""), header=T, as.is=T)        
           }
         
     }
@@ -69,6 +69,7 @@ plot.stanza <- function(n, a) {
     vis.nodes$shadow <- FALSE # Nodes will drop shadow
     #vis.nodes$title  <- vis.nodes$media # Text on click
     vis.nodes$label  <- vis.nodes$id # Node label
+    vis.nodes$label.cex  <- 50 # Node label
     vis.nodes$title  <- vis.nodes$weight
     vis.nodes$size   <- 10+vis.nodes$weight*4# Node size
     vis.nodes$borderWidth <- .5 # Node border width
@@ -86,9 +87,9 @@ plot.stanza <- function(n, a) {
     vis.links$shadow <- FALSE    # edge shadow
     vis.links$dashes <- c(FALSE, TRUE, TRUE)[links$type]
     if(INDEX=="-1") {
-        visnet <- visNetwork(vis.nodes, vis.links, width="100%", height="1100px") #main=paste("death of narcissus")) %>% visPhysics(stabilization = FALSE)
+        visnet <- visNetwork(vis.nodes, vis.links, width="100%", height="1100px") %>% visPhysics(stabilization = FALSE)
     } else {
-        visnet <- visNetwork(vis.nodes, vis.links, width="100%", height="1000px")#, main=paste("stanza ",toString(n+1),sep="")) %>% visPhysics(stabilization = FALSE)
+        visnet <- visNetwork(vis.nodes, vis.links, width="100%", height="1000px") %>% visPhysics(stabilization = FALSE)
     }
     return(visnet)
    

@@ -5,6 +5,6 @@ account: hilozoista
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 904488
-bundleId: 2054523
+bundleId: 2057026
 url: https://hilozoista.shinyapps.io/muerte-shiny/
-when: 1556781106.66723
+when: 1556864798.4544
