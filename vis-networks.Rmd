@@ -3,11 +3,13 @@ title: "muerte-red"
 output: html_notebook
 ---
 ```{r}
-require(shiny)
+library(shiny)
 require(visNetwork)
 library(markdown)
+#Sys.setenv(RSTUDIO_PANDOC="/Applications/RStudio.app/Contents/MacOS/pandoc")
 #shiny::runApp(system.file("shiny", package = "visNetwork"))
-# Define UI for app that draws a histogram ----
+
+# Define UI for app ----
 ui <- fluidPage(style="padding-top: 0px;",
     visNetworkOutput("network",height="1000"),
   absolutePanel(
@@ -21,7 +23,7 @@ ui <- fluidPage(style="padding-top: 0px;",
                         "Stanza 13" = 13,"Stanza 14" = 14, "Stanza 15" = 15, "Stanza 16" = 16, "Whole poem" = 0),
           selected = 1),
       checkboxInput(inputId="nodetype","All Nodes", value = TRUE),
-      checkboxInput(inputId="soundon","With Sound", value = FALSE)
+      checkboxInput(inputId="soundon","Aural Edges", value = FALSE)
     ),
     style = "opacity: 0.92"
   )
@@ -39,25 +41,32 @@ shinyApp(ui = ui, server = server)
 runApp("my_app")
 ```
 
-```{r}
 
+
+```{r}
+library(shiny)
 plot.stanza <- function(n, a, s) {
     INDEX=toString(n)
     if(INDEX=="-1") {
-        nodes <- read.csv("~/muerte-red/narciso/nodes.csv", header=T, as.is=T)
-    links <- read.csv("~/muerte-red/narciso/edges.csv", header=T, as.is=T)
+        nodes <- read.csv("./narciso/nodes.csv", header=T, as.is=T)
+        
+        if(s) {
+              links <- read.csv("./narciso/edges-sound.csv", header=T, as.is=T)
+        } else {
+                links <- read.csv("./narciso/edges.csv", header=T, as.is=T)
+          }  
         
     } else {
       if(s) {
-        links <- read.csv(paste(paste("~/muerte-red/narciso/edges-sound-",INDEX,sep=""),".csv",sep=""), header=T, as.is=T) 
-        nodes <- read.csv("~/muerte-red/narciso/nodes-2.csv", header=T, as.is=T)
+        links <- read.csv(paste(paste("./narciso/edges-sound-",INDEX,sep=""),".csv",sep=""), header=T, as.is=T) 
+        nodes <- read.csv(paste(paste("./narciso/nodes-",INDEX,sep=""),".csv",sep=""), header=T, as.is=T)
       } else {
           if(a) {
-          nodes <- read.csv("~/muerte-red/narciso/nodes.csv", header=T, as.is=T)
+          nodes <- read.csv("./narciso/nodes.csv", header=T, as.is=T)
         } else {
-          nodes <- read.csv(paste(paste("~/muerte-red/narciso/nodes-",INDEX,sep=""),".csv",sep=""), header=T, as.is=T)
+          nodes <- read.csv(paste(paste("./narciso/nodes-",INDEX,sep=""),".csv",sep=""), header=T, as.is=T)
         }
-        links <- read.csv(paste(paste("~/muerte-red/narciso/edges-",INDEX,sep=""),".csv",sep=""), header=T, as.is=T)
+        links <- read.csv(paste(paste("./narciso/edges-",INDEX,sep=""),".csv",sep=""), header=T, as.is=T)
       }
     }
        
@@ -117,4 +126,4 @@ plot.stanza <- function(n, a, s) {
 #plot.stanza(-1)
 ```
 
-```{r}
+
